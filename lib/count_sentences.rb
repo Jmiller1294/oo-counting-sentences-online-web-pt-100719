@@ -24,10 +24,11 @@ class String
 
   def count_sentences
      
-     if self.split.end_with?(".")||end_with?("!")||
-        
+     count = 0
+     if self.split.end_with?(".")||end_with?("!")||end_with?("?")
+        count += 1
      end
-    
+    count 
   end 
  
 end
