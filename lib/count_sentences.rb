@@ -25,9 +25,11 @@ class String
   def count_sentences
      
      count = 0
-     if self.split.end_with?(".")||end_with?("!")||end_with?("?")
+      self.split.each do 
+        if self.end_with?(".")||end_with?("!")||end_with?("?")
         count += 1
-     end
+        end
+      end
     count 
   end 
  
