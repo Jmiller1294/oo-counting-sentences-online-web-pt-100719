@@ -26,7 +26,7 @@ class String
      
      count = 0
       self.split.each do 
-        if self.end_with?(".")||end_with?("!")||end_with?("?")
+        if self.end_with?(".")||self.end_with?("!")||self.end_with?("?")
         count += 1
         end
       end
